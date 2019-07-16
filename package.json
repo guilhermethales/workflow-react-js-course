@@ -7,6 +7,7 @@
     "lint:watch": "gulp",
     "lint:fix": "standard --fix",
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack/prod.config -p",
+    "build-dev": "webpack --config webpack/dev.config.js",
     "storybook": "start-storybook -p 6006 -c storybook",
     "build-storybook": "build-storybook -c storybook",
     "update-packages": "node scripts/update.js"
@@ -21,7 +22,7 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "chai": "^3.5.0",
-    "clean-webpack-plugin": "^0.1.15",
+    "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "beta",
