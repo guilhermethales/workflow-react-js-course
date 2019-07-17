@@ -9,7 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack/prod.config -p",
     "build-dev": "webpack --config webpack/dev.config.js",
     "storybook": "start-storybook -p 6006 -c storybook",
-    "build-storybook": "build-storybook -c storybook",
+    "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook",
     "update-packages": "node scripts/update.js"
   },
   "devDependencies": {
